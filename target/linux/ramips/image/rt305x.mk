@@ -230,7 +230,7 @@ TARGET_DEVICES += asus_rt-n10-plus
 
 define Device/asus_rt-n13u
   SOC := rt3052
-  IMAGE_SIZE := 7872k
+  IMAGE_SIZE := 3776k
   DEVICE_VENDOR := Asus
   DEVICE_MODEL := RT-N13U
   DEVICE_PACKAGES := kmod-leds-gpio kmod-rt2800-pci kmod-usb-dwc2
