@@ -13,9 +13,9 @@ PKG_RELEASE:=3
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/paulusmack/ppp
-PKG_SOURCE_DATE:=2020-10-03
-PKG_SOURCE_VERSION:=ad3937a0a38a696eb1a37dbf8f92e8e6072cdccb
-PKG_MIRROR_HASH:=c5b39615eb62728431b19f3ae5428eb1e2fc705b4b7b960228fe5b5d7b5a4bca
+PKG_SOURCE_DATE:=2021-01-02
+PKG_SOURCE_VERSION:=952cfa5acc41ad4ceee160420a188a388bb340cf
+PKG_MIRROR_HASH:=c2e37e94192b83c5cf0e2d3303055d8bfdd0a7baf86b61429444ab1f5a825815
 PKG_MAINTAINER:=Felix Fietkau <nbd@nbd.name>
 PKG_LICENSE:=BSD-4-Clause
 PKG_CPE_ID:=cpe:/a:samba:ppp
@@ -242,7 +242,7 @@ endef
 
 define Package/ppp-mod-pppoe/install
 	$(INSTALL_DIR) $(1)/usr/lib/pppd/$(PKG_RELEASE_VERSION)
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/lib/pppd/$(PKG_RELEASE_VERSION)/rp-pppoe.so \
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/lib/pppd/$(PKG_RELEASE_VERSION)/pppoe.so \
 		$(1)/usr/lib/pppd/$(PKG_RELEASE_VERSION)/
 endef
 
